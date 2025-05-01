@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Desarrollador de Tecnología Integrada</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Juan Camilo Hinpapie Toro</h1>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#sobremi">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="overlay"></div>
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="videoinicio2.mp4" type="video/mp4" />
+    </video>
+    <div class="container">
+      <h2>Desarrollador de Tecnología Integrada</h2>
+      <p>Ingeniero en Prototipado, Electrónica y Software</p>
+      <a href="#proyectos" class="btn">Ver Proyectos</a>
+      <a href="#contacto" class="btn-secondary">Contáctame</a>
+    </div>
+  </section>
+
+  <section id="servicios" class="section">
+    <div class="container">
+      <h2>Servicios</h2>
+      <ul class="grid">
+        <li><strong>Diseño 3D industrial:</strong> Modelado CAD, ensambles, simulación.</li>
+        <li><strong>Programación embebida:</strong> Arduino, ESP32, Microship Pic (C/C++).</li>
+        <li><strong>Diseño electrónico:</strong> PCBs en EasyEDA, prototipos funcionales.</li>
+        <li><strong>Sistemas embebidos:</strong> Firmware + control desde app/web.</li>
+        <li><strong>Prototipado físico:</strong> Impresión 3D y router CNC.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="proyectos" class="section">
+    <div class="container">
+      <h2>Proyectos Destacados</h2>
+      <div class="project">
+        <h3>🛠️ Diseño y Construcción de CNC Router</h3>
+        <p><strong>Rol en el proyecto:</strong> Diseño mecánico, integración electrónica y puesta en marcha.</p>
+        <p><strong>Descripción:</strong> Desarrollo de una máquina CNC Router casera con estructura metálica, controlado por Arduino UNO y drivers para motores NEMA 23. Utiliza un husillo de 500W para grabado y corte de materiales como madera, acrílico y PCB.</p>
+        <p><strong>Entregables:</strong> Videos demostrativos y modelos 3D visualizables de componentes desarrollados con la CNC.</p>
+        <p><strong>Herramientas utilizadas:</strong> Fusion 360, Arduino IDE, GRBL.</p>      
+      <div class="grid-proyectos">
+        <!-- Video del CNC -->
+        <div class="proyecto-item">
+          <h4>Video Router CNC</h4>
+          <video class="preview-video" muted loop playsinline preload="none" poster="imagen-videocnc1.jpg">
+            <source src="video-cnc1.mp4" type="video/mp4" />
+          </video>
+        </div>
+    
+        <!-- Imagen CNC -->
+        <div class="proyecto-item">
+          <h4>Imagenes Mecanizados</h4>
+          <a href="img-cnc-full.jpg" data-lightbox="cnc">
+            <img src="imagen-cnc1.jpg" alt="Foto CNC Router" />
+          </a>
+        </div>
+        <div class="proyecto-item">
+          <h4> ______</h4>
+          <a href="img-cnc-full.jpg" data-lightbox="cnc">
+            <img src="imagen-cnc2.jpg" alt="Foto CNC Router" />
+          </a>
+        </div>
+      </div>
+          <div class="project">
+            <h3>🛠️ Modelado 3D de Picapasto con Motor y Despulpadora de Café Manual</h3>
+            <p><strong>Rol en el proyecto:</strong> Diseño CAD completo y documentación técnica.</p>
+            <p><strong>Descripción:</strong> Prototipos funcionales modelados para manufactura: un picapasto con motor acoplado y una despulpadora de café manual optimizada para producción rural.</p>
+            <p><strong>Entregables:</strong> Video render del ensamblaje, planos técnicos y explosión 3D.</p>
+            <p><strong>Herramientas utilizadas:</strong> CAD.</p>
+          
+            <!-- Galería separada en columnas -->
+            <div class="grid-proyectos">
+              <!-- Picapasto -->
+              <div class="proyecto-item">
+                <h4>Video Picapasto</h4>
+                <video class="preview-video" muted loop playsinline preload="none" poster="imagen-videopicapasto.jpg">
+                  <source src="video-picapasto.mp4" type="video/mp4" />
+                </video>
+                <h4>Hoja Ficha Tecnica Picapasto</h4>
+                <a href="img-picapasto1.jpg" data-lightbox="picapasto">
+                  <img src="imagen-picapasto.jpg" alt="Render Picapasto" />
+                </a>
+              </div>
+          
+              <!-- Despulpadora -->
+              <div class="proyecto-item">
+                <h4>Video Despulpadora</h4>
+                <video class="preview-video" muted loop playsinline preload="none" poster="imagen-videodespulpadora.jpg">
+                  <source src="video-despulpadora.mp4" type="video/mp4" />
+                </video>
+                <h4>Hoja Ficha Tecnica Despulpadora</h4>
+                <a href="img-despulpadora.jpg" data-lightbox="despulpadora">
+                  <img src="imagen-despulpadora.jpg" alt="Render Despulpadora" />
+                </a>
+              </div>
+            </div>            
+              <div class="project">
+                <h3>💡 Balanza Bluetooth para Personas con Discapacidad Visual</h3>
+                <p><strong>Rol en el proyecto:</strong> Desarrollo del sistema electrónico y programación embebida.</p>
+                <p><strong>Descripción:</strong> Dispositivo accesible que transmite el peso a una app móvil mediante Bluetooth, permitiendo interacción por rangos preconfigurados.</p>
+                <p><strong>Tecnologías utilizadas:</strong> ESP32, App Inventor, CAD.</p>
+                <a href="https://github.com/usuario/proyecto-balanza" target="_blank">🔗 Ver Código en GitHub</a>
+          
+                <!-- Galería Balanza -->
+                <div class="media-gallery">
+                  <div class="media-item">
+                    <video class="preview-video" muted loop playsinline preload="none" poster="imagen-videobalanza.jpg">
+                      <source src="video-balanza.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="media-item">
+                    <a href="img-balanza1.jpg" data-lightbox="balanza">
+                      <img src="img-balanza1.jpg" alt="Foto Balanza 1" />
+                    </a>
+                  </div>
+                  <div class="media-item">
+                    <a href="img-balanza2.jpg" data-lightbox="balanza">
+                      <img src="img-balanza2.jpg" alt="Foto Balanza 2" />
+                    </a>
+                  </div>
+                </div>
+              </div>    
+            </div>
+          </div>
+          
+
+  <section id="sobremi" class="section">
+    <div class="container sobremi-container">
+      <div class="sobremi-texto">
+        <h2>Sobre mí</h2>
+        <p>
+          Soy ingeniero en mecatrónica con experiencia en modelado 3D, electrónica, software y prototipado. Estudiante de Análisis y Diseño de Software. Me dedico a crear soluciones completas que combinan mecánica, electrónica y programación.
+        </p>
+      </div>
+      <div class="sobremi-foto">
+        <img src="foto.jpg" alt="Foto de perfil de Juan Camilo" />
+        <div class="figuras-decorativas">
+          <div class="circulo"></div>
+          <div class="triangulo"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--   <section id="contacto" class="section">
+    <div class="container">
+      <h2>Contacto</h2>
+      <form>
+        <input type="text" placeholder="Tu nombre" required />
+        <input type="email" placeholder="Tu correo" required />
+        <textarea placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section> -->
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Juan Camilo Hincapie Toro. Desarrollador de Tecnología Integrada.</p>
+    </div>
+  </footer>
+  <!-- Lightbox2 -->
+<link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
+
+<script>
+  document.querySelectorAll('.preview-video').forEach(video => {
+    video.addEventListener('mouseenter', () => {
+      video.play();
+    });
+    video.addEventListener('mouseleave', () => {
+      video.pause();
+      video.currentTime = 0;
+    });
+
+    video.addEventListener('click', () => {
+      const win = window.open(video.querySelector('source').src, '_blank');
+      win.focus();
+    });
+  });
+</script>
+</body>
+</html>
