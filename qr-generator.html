@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Generador de códigos QR personalizados con logo incluido." />
+    <title>🔗Generador QR con logo</title>
+
+    <!-- Favicon con emoji de cadena -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22><text y=%22.9em%22 font-size=%2216%22>🔗</text></svg>" />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="qr.css" />
+
+    <!-- Librería QRCode con logo -->
+    <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+    <!-- Script propio -->
+    <script defer src="qr.js"></script>
+</head>
+
+<body>
+    <section id="qr-section">
+        <h1>🔗Generador de QR</h1>
+
+        <input type="text" id="qr-text" placeholder="Ingresa el texto o URL" />
+
+        <label for="logo-upload" class="custom-upload">Subir logo</label>
+        <input type="file" id="logo-upload" accept="image/*" />
+
+
+        <img id="logo-preview" src="" alt="Previsualización logo" style="max-width: 100px; display: none;" />
+
+        <button onclick="descargarQR()">Descargar QR</button>
+
+        <div id="qr-contenedor"></div>
+
+        <p style="margin-top: 20px;">¿Quieres ver más proyectos? 👉
+            <a href="https://rollandgarros.github.io/Portafolio/" target="_blank">Visita mi portafolio</a>
+        </p>
+    </section>
+</body>
+
+</html>
